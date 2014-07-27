@@ -131,4 +131,4 @@ parsed_json = json.loads(json_string)
 output=parsed_json['trip']['cloud_cover']['cond']
 f.close()
 #Posts to Facebook using the Graph API
-graph.post('me/feed',message='Next ISS pass %s. \nThe weather is expected to be %s'%(outputString,output))
+graph.post('groupid/feed',message='Next ISS pass %s. \nThe weather is expected to be %s'%(outputString,output))
